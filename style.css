@@ -1,0 +1,18 @@
+
+.body {
+    background: #020631;
+    font: 14px 'Nunito', sans-serif;
+  }
+
+.taskscontanier{
+    border: solid;
+    border-radius: 2%;
+    text-align: center;
+    margin: 200px 400px;
+   padding: 0%;
+   width:40%;
+   height: 30%;
+
+   background-color: aliceblue;
+
+}
