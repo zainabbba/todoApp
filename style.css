@@ -1,18 +1,140 @@
+:root {
+  --red-color: #d93679;
+  --pink-color: #c94fa3;
+  --blue-color: #00407e;
+}
 
-.body {
-    background: #020631;
-    font: 14px 'Nunito', sans-serif;
+html {
+  font-size: 16px;
+}
+
+body {
+  background: linear-gradient(to right bottom, #df2b67, #c655ad, #8c7cd6, #4c97db, #3fa7c8) no-repeat fixed top;
+  font-family: system-ui, sans-serif;
+
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 150px auto 0;
+  width: 550px;
+}
+
+main h1 {
+  font-size: 4rem;
+  color: #fff;
+  border-bottom: 5px solid #dc2e6d85;
+  padding: 5px;
+}
+
+.taskscontanier {
+
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
+  width: 100%;
+
+
+}
+
+
+.item {
+  background: linear-gradient(349deg, rgb(169 104 193) 6%, rgb(255 209 231) 100%);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  color: var(--blue-color);
+}
+
+.item div {
+  display: flex;
+  width: 50px;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.item div i {
+  cursor: pointer;
+}
+.item:not(:nth-child(1)) {
+  margin-top: 5px;
+}
+
+.tasks {
+
+  width: 100%;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.no-tasks {
+  color: #9f0909;
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+.add-task {
+  text-align: center;
+}
+
+.add-task input {
+
+
+  outline: none;
+  border: 1px solid var(--red-color);
+  padding: 10px;
+  border-right: none;
+  font-size: 1rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 70%;
+  box-shadow: -2px -1px 16px 0px #bb82c9;
+}
+
+.add-task button {
+  margin-left: -5px;
+  padding: 9px 0;
+  font-size: 1rem;
+  background: var(--red-color);
+  color: #fff;
+  border: 2px solid var(--red-color);
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  width: 15%;
+  box-shadow: 4px -2px 16px 0px #bb82c9;
+}
+
+
+
+/* Media querie for medium devices */
+@media (max-width: 991.98px) {
+  html {
+    font-size: 14px;
   }
 
-.taskscontanier{
-    border: solid;
-    border-radius: 2%;
-    text-align: center;
-    margin: 200px 400px;
-   padding: 0%;
-   width:40%;
-   height: 30%;
+  main {
+    width: 80%;
+  }
+}
 
-   background-color: aliceblue;
+/* Media querie for small devices */
+@media (max-width: 767.98px) {
+  html {
+    font-size: 13px;
+  }
 
+  main {
+    width: 95%;
+    margin-top: 200px;
+  }
 }
